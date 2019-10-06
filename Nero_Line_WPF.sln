@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nero_Line_WPF", "Nero_Line_WPF\Nero_Line_WPF.csproj", "{CDBA9629-32A7-4A63-BAE0-D65E0A3275E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nero_BL", "Nero_BL\Nero_BL.csproj", "{BC054221-CFA6-4381-BA3F-9AA90E0E1477}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDBA9629-32A7-4A63-BAE0-D65E0A3275E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBA9629-32A7-4A63-BAE0-D65E0A3275E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBA9629-32A7-4A63-BAE0-D65E0A3275E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBA9629-32A7-4A63-BAE0-D65E0A3275E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC054221-CFA6-4381-BA3F-9AA90E0E1477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC054221-CFA6-4381-BA3F-9AA90E0E1477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC054221-CFA6-4381-BA3F-9AA90E0E1477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC054221-CFA6-4381-BA3F-9AA90E0E1477}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {110BF05D-355F-4DDD-B8B6-56015A400A65}
+	EndGlobalSection
+EndGlobal

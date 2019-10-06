@@ -1,0 +1,36 @@
+﻿<Window x:Class="Nero_Line_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nero_Line_WPF"
+        mc:Ignorable="d"
+        Title="Nero" Height="110" Width="520" WindowStyle="ToolWindow" ResizeMode="NoResize" Background="#FFA9C4A1">
+    <Window.DataContext>
+        <local:VM></local:VM>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="BorderThickness" Value="3"/>
+        </Style>
+    </Window.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Open File" Command="{Binding ButtonOpenFileCommand}" BorderBrush="ForestGreen" Margin="30,5,5,5" />
+            <ComboBox ItemsSource="{Binding Combo}" SelectedItem="{Binding SelectBox , UpdateSourceTrigger=PropertyChanged }" SelectedIndex="0" Width="70" Height="20"  VerticalContentAlignment="Center"  Margin="40,5,5,5" />
+            <Button IsEnabled="{Binding IsOpen}" Command="{Binding ButtonSaveFileCommand}" Content="Save File" BorderBrush="Red" Margin="30,5,5,5"/>
+            <Button Content="Editor" Command="{Binding ButtonOpenEditorCommand}" BorderBrush="DarkOrange" Margin="50,5,5,5" />
+        </StackPanel>
+        <TextBlock Text="{Binding StatusStrip}" Grid.Row="2" Margin="5,2,5,2"/>
+    </Grid>
+</Window>
